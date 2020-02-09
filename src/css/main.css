@@ -62,7 +62,7 @@
 .reports {
 display: flex;
 flex-flow: row wrap;
-
+align-items: flex-start;
 justify-content: space-between;
 }
 
@@ -77,4 +77,17 @@ justify-content: space-between;
 @media only screen and (max-width: 768px) {
 
 
+
+  .reports_item:last-child{
+    align-self: auto;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+.reports{
+  flex-direction: column;
+  align-items: center;
+}
+  
+  
 }
